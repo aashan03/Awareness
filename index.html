@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oops!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f0;
+      text-align: center;
+      padding-top: 100px;
+    }
+    #popup {
+      background-color: #ffdddd;
+      border: 2px solid #ff4444;
+      padding: 40px;
+      margin: auto;
+      width: 50%;
+      font-size: 18px;
+      box-shadow: 0 0 10px #888;
+    }
+    #redirect-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff4444;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="popup">
+  <h1>Oops! You fell for it...</h1>
+  <p>This could have been a malicious file. <br>Always be cautious with unexpected email attachments.</p>
+  <button id="redirect-btn">Exit</button>
+</div>
+
+<script>
+  document.getElementById("redirect-btn").onclick = function() {
+    window.location.href = "aware.png"; // Replace with your actual image URL
+  };
+</script>
+
+</body>
+</html>
